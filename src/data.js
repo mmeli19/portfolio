@@ -58,7 +58,7 @@ export const internshipPortfolio = [
 export const experiencePortfolio = [
     {
       id: 1,
-      title: "RippleMatch Internship",
+      title: "Leadership Develpment",
       img: "assets/ripplematch.png",
     },
     {
