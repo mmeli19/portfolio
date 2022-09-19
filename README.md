@@ -1,3 +1,8 @@
+# Personal website 
+I created this website to desplay all i have learnt working working with Javacrip, reactJS, HTML,SCSS/CSS from my previous internship at Palo Alto Networks.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
