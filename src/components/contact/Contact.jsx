@@ -1,27 +1,20 @@
-import { useState } from "react";
 import "./contact.scss"
-
+const openInNewTab = url => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+// https://calendly.com/mmeli-chukwunwike/15min
 export default function Contact() {
-    const [message, setMessage] = useState(false);
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setMessage(true);
-    };
-
     return (
         <div className="contact" id="contact">
             <div className="left">
-                <img src="asseta/shake.svg" alt="" />
+                <img src="assets/shake.svg" alt="" />
             </div>
             <div className="right">
-                <h2>Contact.</h2>
-                <form onSubmit={handleSubmit}>
-                    <input type="text" placeholder="Email" />
-                    <textarea placeholder="Message"></textarea>
-                    <button type="submit">Send</button>
-                    {message && <span> Thanks, I'll reply ASAP :)</span>}
-                </form>
+                <h2 className="font-link" >I am always open to new ideas or opportunities.</h2>
+                <button onClick={() => {
+                    openInNewTab("https://calendly.com/mmeli-chukwunwike/15min")
+                    }} className="font-link2" style={{fontSize:"20px"}}>Get in touch
+                </button>
             </div>
         </div>
     )
