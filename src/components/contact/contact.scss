@@ -1,8 +1,12 @@
 @import "../../global.scss";
-
 .contact{
     background-color: lightblue;
     display: flex;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
 
     .font-link {
         font-family: 'Open Sans', sans-serif;
@@ -34,6 +38,11 @@
         h2{
             font-size: 25px;
             position: absolute;
+
+            @include mobile{
+                font-size: 20px;
+                text-align: center;
+            }
         }
 
         button{
@@ -50,6 +59,12 @@
     
             &:focus {
               outline: none;
+            }
+
+             @include mobile{
+                font-size: 20px;
+                text-align: center;
+                align-items: center;
             }
         }
     }
