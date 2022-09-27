@@ -45,9 +45,10 @@
 
             @include mobile{
                 display: inline-block;
-                justify-content: left;
                 font-size: 0em;
                 margin-top: 300px;
+                justify-content: left;
+                font-size: 10em;
                 margin-right: 30px;
             }
         }
@@ -65,13 +66,14 @@
 
     .right {
         flex: 0.5;
-        position: absolute;
+        position: relative;
 
         @include mobile{
             display: inline-block;
             align-items: center;
             justify-content: center;
             margin-left: -45px;
+            position: absolute;
         }
 
         .wrapper {
