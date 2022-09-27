@@ -1,9 +1,9 @@
 import "./topbar.scss";
-import HomeIcon from '@material-ui/icons/Home';
-import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import TwitterIcon from "@material-ui/icons/Twitter";
+import HomeIcon from '@mui/icons-material/Home';
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedinIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
   return (
@@ -29,7 +29,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
               target={"_blank"}
               className="icon"
             >
-              <LinkedInIcon />
+              <LinkedinIcon />
             </a>
 
             {/* Instagram */}

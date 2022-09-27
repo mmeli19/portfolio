@@ -18,8 +18,8 @@ export default function Portfolio() {
       title: "Education",
     },
     {
-      id: "internship",
-      title: "Internship",
+      id: "internships",
+      title: "Internships",
     },
     {
       id: "experience",
@@ -40,7 +40,7 @@ export default function Portfolio() {
       case "education":
         setData(educationPortfolio);
         break;
-      case "internship":
+      case "internships":
         setData(internshipPortfolio);
         break;
       case "experience":
