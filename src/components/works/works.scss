@@ -1,9 +1,15 @@
 @import "../../global.scss";
+
 .works{
     background-color: rgb(230, 220, 202);
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
 
     .font-link {
         font-family: 'Open Sans', sans-serif;
@@ -20,6 +26,12 @@
         align-items: center;
         justify-content: center;
 
+        @include mobile{
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+        }
+
         .wave {
             animation-name: wave-animation;  
             animation-duration: 2.5s;        
@@ -27,6 +39,14 @@
             transform-origin: 70% 70%;       
             display: inline-block;
             font-size: 15em;
+
+            @include mobile{
+                display: inline-block;
+                align-items: left;
+                justify-content: left;
+                font-size: 12em;
+                margin-right: 30px;
+            }
         }
         @keyframes wave-animation {
             0% { transform: rotate( 0.0deg) }
@@ -44,6 +64,12 @@
         flex: 0.5;
         position: relative;
 
+        @include mobile{
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+        }
+
         .wrapper {
             width: 100%;
             height: 100%;
@@ -53,6 +79,12 @@
             display: flex;
             flex-direction: column;
             // justify-content:center;
+
+            @include mobile{
+                display: inline-block;
+                align-items: center;
+                justify-content: center;
+            }
         }
 
         h1{
@@ -67,7 +99,10 @@
     
     
             @include mobile{
-                font-size: 20px;
+                display: inline-block;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 50px;
             }
         }
         h3 {
@@ -81,7 +116,12 @@
 
 
             @include mobile{
-                font-size: 10px;
+               
+                display: inline-block;
+                align-items: center;
+                justify-content: center;
+                font-size: 15px;
+                margin-bottom: 5px;
             }
         }
         h4{
@@ -96,6 +136,12 @@
     
     
             @include mobile{
+               
+              
+                align-items: center;
+                justify-content: center;
+                font-size: 15px;
+
                 font-size: 20px;
             }
         }
