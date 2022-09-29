@@ -17,13 +17,17 @@
             height: 700px;
             border-radius:20%;
             display: flex;
-            align-items: flex-end;
+            align-items: flex-start;
             justify-content: center;
             float: right;
  
             @include mobile{
                 align-items: flex-start;
-                width: 350px;
+                width: 280px;
+                height: 400px;
+                position: relative;
+                top: -45px
+                // float: none;
             }
         } 
     }
